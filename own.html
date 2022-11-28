@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        #container{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content:space-around;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .div-i{
+            width: 35vw;
+            height: 25vh;
+            border: 3px solid darkred;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        button{
+            width: 5rem;
+            height: 3rem;
+            background-color: darkblue;
+        }
+    </style>
+</head>
+<body>
+
+
+
+    <div id="container">
+        <div id="div1" class="div-i"><button id="btn1" onclick="display()">1</button></div>
+        <div id="div2" class="div-i"><button id="btn2" onclick="display()">2</button></div>
+        <div id="div3" class="div-i"><button id="btn3" onclick="display()">3</button></div>
+        <div id="div4" class="div-i"><button id="btn4" onclick="display()">4</button></div>
+    </div>
+
+
+    <script>
+        let btn1 = document.getElementById("btn1");
+        let btn2 = document.getElementById("btn2");
+        let btn3 = document.getElementById("btn3");
+        let btn4 = document.getElementById("btn4");
+
+        function display(){
+            if(btn2.click){
+                alert("first div called")
+            }
+            else if (btn2.click){
+                alert("div 2 called")
+            }
+            else if (btn3.click) {
+                alert("div 3 callesd")
+            }
+            else{
+                alert("div 4")
+            }
+        }
+    </script>
+</body>
+</html>
